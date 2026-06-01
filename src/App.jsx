@@ -1247,7 +1247,7 @@ function Footer() {
             <img
               src={`${BASE}images/logo-black.png`}
               alt="Blue Arrow Solutions"
-              className="h-8 w-auto invert mb-6"
+              className="h-[42px] w-auto invert mb-6"
             />
             <p
               className="text-sm text-white/50 leading-relaxed mb-6"
