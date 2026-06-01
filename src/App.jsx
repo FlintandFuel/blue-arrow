@@ -124,7 +124,7 @@ function Nav({ scrolled }) {
             <img
               src={`${BASE}images/logo-black.png`}
               alt="Blue Arrow Solutions"
-              className="h-8 w-auto"
+              className="h-[42px] w-auto"
             />
           </a>
 
@@ -179,7 +179,7 @@ function Nav({ scrolled }) {
             className="fixed inset-0 z-50 bg-[#0A0A0A] flex flex-col px-8 py-10"
           >
             <div className="flex justify-between items-center mb-12">
-              <img src={`${BASE}images/logo-black.png`} alt="Blue Arrow Solutions" className="h-8 w-auto invert" />
+              <img src={`${BASE}images/logo-black.png`} alt="Blue Arrow Solutions" className="h-[42px] w-auto invert" />
               <button
                 className="w-11 h-11 flex items-center justify-center text-white"
                 onClick={() => setMenuOpen(false)}
