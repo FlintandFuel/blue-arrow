@@ -34,6 +34,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import SalesBar from './components/SalesBar'
 import './index.css'
 
+const BASE = import.meta.env.BASE_URL
+
 // ─── Animation variants ───────────────────────────────
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -120,7 +122,7 @@ function Nav({ scrolled }) {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3 flex-shrink-0">
             <img
-              src="/images/logo-black.png"
+              src={`${BASE}images/logo-black.png`}
               alt="Blue Arrow Solutions"
               className="h-8 w-auto"
             />
@@ -177,7 +179,7 @@ function Nav({ scrolled }) {
             className="fixed inset-0 z-50 bg-[#0A0A0A] flex flex-col px-8 py-10"
           >
             <div className="flex justify-between items-center mb-12">
-              <img src="/images/logo-black.png" alt="Blue Arrow Solutions" className="h-8 w-auto invert" />
+              <img src={`${BASE}images/logo-black.png`} alt="Blue Arrow Solutions" className="h-8 w-auto invert" />
               <button
                 className="w-11 h-11 flex items-center justify-center text-white"
                 onClick={() => setMenuOpen(false)}
@@ -553,7 +555,7 @@ function About() {
               style={{ aspectRatio: '4/5', maxHeight: '600px', backgroundColor: '#F5F5F5' }}
             >
               <img
-                src="/images/team-photo.png"
+                src={`${BASE}images/team-photo.png`}
                 alt="Nichelle and Hilgard, founders of Blue Arrow Solutions"
                 className="w-full h-full object-cover object-top"
               />
@@ -1243,7 +1245,7 @@ function Footer() {
           {/* Brand */}
           <div>
             <img
-              src="/images/logo-black.png"
+              src={`${BASE}images/logo-black.png`}
               alt="Blue Arrow Solutions"
               className="h-8 w-auto invert mb-6"
             />
